@@ -1,0 +1,108 @@
+.post_header {
+  height: 60px;
+  border-bottom: 1px solid rgb(219, 219, 219);
+  display: flex;
+}
+.post_like {
+  font-weight: 400;
+  margin-left: 15px;
+  margin-bottom: 8px;
+}
+/* .post_comment{
+
+} */
+.post_container {
+  width: 470px;
+  border: 1px solid rgb(219, 219, 219);
+  background-color: #fff;
+  margin-top: 25px;
+  border-radius: 8px;
+}
+.post_image {
+  min-height: 30px;
+  min-width: 3px;
+  margin: 10px;
+  cursor: pointer;
+}
+.Post_username {
+  margin-top: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.post_reactimage {
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+  cursor: pointer;
+}
+.commentbox {
+  border: 0px;
+  width: 100%;
+  height: 56px;
+  font-size: 16px;
+  padding: 0px;
+  margin-left: 15px;
+}
+
+.commentbox:focus {
+  border: none;
+  outline: none;
+}
+.postcomment {
+  margin: 10px;
+}
+
+.post_image_file {
+  width: 470px;
+}
+
+.postCommentCount {
+  margin-left: 15px;
+  color: #8e8e8e;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+.time {
+  margin: 0px;
+  font-size: 16px;
+  margin-left: 15px;
+  color: #8e8e8e;
+  margin-bottom: 8px;
+  font-weight: normal;
+}
+.comment_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid rgb(219, 219, 219);
+}
+
+.post_comment {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #0095f6;
+  cursor: pointer;
+}
+.post_disabled {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #a5dbff;
+}
+
+
+@media screen and (max-width:470px){
+  .post_container{
+    width: 100%;
+    border-radius: 0px;
+    border: none;
+    border-top: 1px solid rgb(219, 219, 219);
+    border-bottom: 1px solid rgb(219, 219, 219);
+  }
+
+  .post_image_file{
+    width:100vw
+  }
+}

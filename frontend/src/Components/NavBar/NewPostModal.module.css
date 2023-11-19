@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=fallback");
+
+.darkBG {
+  background-color: rgba(0, 0, 0, 0.458);
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+}
+
+.modal {
+  width: 382px;
+  height: 417px;
+  background: white;
+  color: black;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+}
+
+.modalHeader,.modalHeader_show {
+  height: 42px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  width: 100%;
+  justify-content:center
+}
+
+.modalHeader_show{
+  justify-content:space-between
+}
+
+.share_btn{
+  color:#0095f6;
+  margin: 0px;
+  margin-right:10px;
+  cursor: pointer;
+
+}
+
+.heading {
+  margin: 0;
+  padding: 10px;
+  color: rgb(38, 38, 38);
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+}
+
+.modalContainer{
+    padding: 24px;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    height: 280px;
+    gap:30px
+}
+
+.selectImage{
+    width: 157px;
+    height:30px;
+    padding:5px 9px;
+    color: #ffffff;
+    background-color: #0095f6;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius:5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input{
+    display:none
+}
+.closeBtn{
+    position:absolute;
+    right:20px;
+    top:20px;
+    background-color: transparent;
+    z-index: 30;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    /* color: white; */
+
+}
+.imgPreview{
+  width:382px;
+  height:326px
+}
+
+@media screen and (max-width:425px){
+  .modal{
+    width: calc(100vw - 43px);
+    height:calc((100vw - 43px) * 417 / 382);
+    padding:0px;
+    overflow:hidden;
+  }
+  .modalContainer{
+    padding:0px;
+    height:calc(100% - 43px);
+    overflow:hidden
+  }
+  .imgPreview{
+    width:100%;
+  }
+}

@@ -1,0 +1,22 @@
+.main_container{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    background-color:#fafafa;
+    min-height: calc(100vh - 60px);
+}
+
+.container{
+    width: 925px;
+    display: flex;
+    justify-content: center;
+}
+
+.left_container{
+    margin-right:32px;
+}
+@media screen and (max-width:1000px) {
+    .left_container{
+        margin-right:0px
+    }
+}

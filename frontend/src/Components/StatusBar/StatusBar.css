@@ -1,0 +1,72 @@
+.statusbar_container {
+  height: 80px;
+  width: 470px;
+  background-color: white;
+  border: 1px solid rgb(219, 219, 219);
+  margin-top: 25px;
+  display: flex;
+  overflow-x: scroll;
+  padding: 16px 0px;
+  border-radius: 8px;
+}
+.statusbar_container::-webkit-scrollbar {
+  display: none;
+}
+.statusbar_status {
+  min-width: 53px;
+  min-height: 53px;
+  cursor: pointer;
+  /* border: 3px solid #df3968; */
+}
+.hidden_input{
+  display: none;
+}
+.statusbar_status_create {
+  min-width: 60px;
+  min-height: 60px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.status_outer_div {
+  width: 61px;
+  height: 61px;
+  border-radius: 50%;
+  background-image: linear-gradient(to bottom, #8a3ab9, #e95950, #bc2a8d, #fccc63, #fbad50, #cd486b, #4c68d7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+.status_inner_div {
+  width: 58px;
+  height: 58px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.status {
+  margin: 0px 10px;
+}
+
+.statusbar_text {
+  font-size: 12px;
+  max-width: 60px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+@media screen and (max-width:470px){
+  .statusbar_container{
+    background-color:transparent;
+    border: none;
+    width:100vw;
+    padding-bottom: 0px;
+    margin-top: 0px;
+  }  
+}

@@ -1,0 +1,149 @@
+.navbar {
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid rgb(219, 219, 219);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main_container {
+  height: 60px;
+  width: 935px;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar_logo {
+  margin-top: 10px;
+  cursor: pointer;
+}
+.navbar_img {
+  margin: 15px 10px;
+  cursor: pointer;
+}
+.navbar_searchbar {
+  height: 30px;
+  width: 215px;
+
+  border: 1px solid #dbdbdb;
+
+  background-color: #fafafa;
+  border-radius: 5px;
+  padding: 0px 5px 0px 35px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+.search_icon {
+  padding-left: 10px;
+  transform: translateY(7px);
+  position: absolute;
+}
+.navbar_searchbar:focus {
+  outline: none;
+  padding-left: 5px;
+}
+
+.navbar_searchbar:focus .search_icon {
+  display: none !important;
+  visibility: hidden;
+}
+
+.icon_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar_searchbar:focus .search_icon {
+  display: none;
+}
+.icon {
+  margin-left: 22px;
+  cursor: pointer;
+}
+.small_screen {
+  display: none;
+}
+.profile_pic {
+  min-width: 24px;
+  min-height: 24px;
+}
+
+@media screen and (max-width: 975px) {
+  .main_container {
+    width: calc(100vw - 40px);
+  }
+  .navbar_searchbar {
+    display: none;
+  }
+  .search_icon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .main_container {
+    width: calc(100vw - 15px);
+    padding: 0px;
+    height: 44px;
+  }
+  .icon {
+    margin-left: 0px;
+    display: none;
+  }
+  .alwaysVisible,
+  .small_screen {
+    display: flex;
+  }
+  .logo_container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+  }
+  .navbar_logo{
+    margin-top:4px
+  }
+}
+
+/* Bottom Bar styles */
+
+.bottombar_main_container {
+  display: none;
+}
+
+.bottom_icon {
+  cursor: pointer;
+}
+.bottombar_profile_pic {
+  width: 24px;
+  height: 24px;
+}
+
+.MuiAvatar-root {
+  width: 24px;
+  height: 24px;
+}
+
+@media screen and (max-width: 470px) {
+  .bottombar_main_container {
+    width: calc(100vw - 15px);
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: white;
+    padding: 0px 7.5px;
+    border-top: 1px solid rgb(219, 219, 219);
+    z-index: 1;
+  }
+}

@@ -1,0 +1,46 @@
+.image {
+  /* height: 75px;
+  width: 75px; */
+  margin-top: 0px;
+  min-width: 65px;
+  min-height: 65px;
+}
+.container {
+  height: 56px;
+  width: 300px;
+  margin-top: 50px;
+  display: flex;
+}
+
+.left{
+  height: 56px;
+  width: 300px;
+  display: flex;
+}
+.gyaan {
+    margin: 5px;
+  margin-top: 8px;
+  margin-left: 10px;
+  
+}
+
+.right{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+.btn_logout{
+  color: #0095f6;
+  background-color:transparent;
+  outline:none;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width:1000px) {
+  .container{
+    display:none
+  }
+
+}
