@@ -7,7 +7,7 @@
 
 # testing
 /coverage
-
+mongo.txt
 # next.js
 /.next/
 /out/
